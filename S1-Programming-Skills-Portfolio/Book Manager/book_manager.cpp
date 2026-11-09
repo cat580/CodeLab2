@@ -1,3 +1,7 @@
+// book_manager.cpp
+// Simple library manager: load/save books from a CSV file and let the user
+// view, search, borrow, and return books via a text menu.
+
 #include <iostream>
 #include <fstream>
 #include <vector>

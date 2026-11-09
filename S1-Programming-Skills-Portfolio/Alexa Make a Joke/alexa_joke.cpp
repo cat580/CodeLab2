@@ -1,3 +1,7 @@
+// alexa_joke.cpp
+// Reads jokes from randomJokes.txt, picks one at random, and reveals the
+// punchline only after the user presses Enter — mimicking an Alexa interaction.
+
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -14,6 +18,7 @@ int main() {
         return 1;
     }
 
+    // Each line is "setup? punchline"; split on the first '?'
     std::string line;
     while (std::getline(file, line)) {
         size_t dot = line.find('?');
@@ -28,6 +33,7 @@ int main() {
         return 1;
     }
 
+    // Pick a random joke index
     std::mt19937 rng(std::random_device{}());
     std::uniform_int_distribution<size_t> dist(0, setups.size() - 1);
     size_t index = dist(rng);

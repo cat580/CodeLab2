@@ -1,6 +1,11 @@
+// co2_calculator.cpp
+// Estimates a user's annual carbon footprint (kg CO2) across five categories:
+// home energy, transport, flights, diet, and consumer goods.
+// Emission factors sourced from BEIS 2024 / ukcalculator.com.
+
 #include <iostream>
 
-// Emission factors (kg CO2) - BEIS 2024 / ukcalculator.com
+// Emission factors in kg CO2
 const double CAR_PETROL   = 0.27;
 const double CAR_DIESEL   = 0.28;
 const double CAR_HYBRID   = 0.16;

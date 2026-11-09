@@ -13,6 +13,10 @@ Asks questions across 5 categories and calculates your total CO2 in tonnes:
 
 Compares your result against the UK average (5.5 tonnes CO2/year).
 
+## References
+- UK Government — BEIS Greenhouse Gas Conversion Factors 2024: https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting
+- UK Carbon Calculator (emission factor guidance): https://www.ukcalculator.co.uk
+
 ## Files
 - `co2_calculator.cpp` — main program
 
